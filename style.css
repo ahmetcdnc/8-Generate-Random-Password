@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+
+body{
+    background-color: #140A25;
+    color: #fff;
+}
+
+.container{
+    margin: 12%;
+    width: 90%;
+    max-width: 700px;   
+}
+
+/* başlık */
+.container h1{
+    font-weight: 500;
+    font-size: 48px;
+
+}
+
+/* Başlıktaki farklı renk yazı */
+.container h1 span{
+    color: #8F1D2C;
+    border-bottom: 4px solid#8F1D2C;
+    padding-bottom: 6px;
+}
+
+/* input ve image alanı */
+.display{
+    width: 100%;
+    margin-top: 40px;
+    margin-bottom: 25px;
+    background: #fff;
+    color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 26px 20px;
+    border-radius: 7px;
+}
+
+.display img{
+    width: 30px;
+    cursor: pointer;
+}
+
+.display input{
+    border: 0;
+    /* Görünür bir dış çizgiye sahip olmayı engeller. inputa tıkladığımızda kenarlığı yok oluyor. */
+    outline: 0;
+    width: 95%;
+    height: 50px;
+    font-size: 24px;
+}
+
+.container button{
+    background-color: #400D2A;
+    color: #fff;
+    border: 0;
+    outline: 0;
+    font-size: 24px;
+    font-weight: 300;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 24px;
+    border-radius: 5px;
+    cursor: pointer;
+    /* hangi özelliğin kaç sn içinde nasıl bir şekilde gerçekleşeceği */
+    transition: background-color 0.2s ease; 
+}
+
+.container button:hover{
+    background-color: #DB2B30;
+
+}
+
+.container button img{
+    width: 30px;
+    margin-right: 10px;
+}
+
+/* Şifreyi kopyaladığımızda arkasının mavi olmasını engelliyoruz. */
+#password::selection{
+    background-color: transparent;
+}
